@@ -24,12 +24,23 @@ namespace LogicLearner.Pages
         private int lessonNum;
         private bool isProblem;
 
+        bool solution;
         public Submission(int lessonNum, bool isProblem, bool solution)
         {
             Debug.WriteLine(solution);
             InitializeComponent();
             this.lessonNum = lessonNum;
             this.isProblem = isProblem;
+            this.solution = solution;
+
+            LessonTitle.Text = LessonSet.Lessons[lessonNum].Name;
+
+            if (!solution)
+            {
+                ColorRectangle.Fill = Brushes.Red;
+                PassFailText.Text = "Tests Failed :(";
+                SubmitNextLesson.Content = "Try Again";
+            }
         }
 
         public delegate void SubmitNextLessonButtonClick(int lessonNum, bool isProblem);
@@ -37,7 +48,12 @@ namespace LogicLearner.Pages
 
         private void SubmitNextLesson_Click(object sender, RoutedEventArgs e)
         {
-            submitNextLessonButtonClickEvent(lessonNum + 1, isProblem);
+            if (solution)
+            {
+                submitNextLessonButtonClickEvent(lessonNum + 1, isProblem);
+                return;
+            }
+            submitNextLessonButtonClickEvent(lessonNum, isProblem);
         }
     }
 }

@@ -7,11 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="70,60,0,0" TextWrapping="Wrap" Text="Number: Title" VerticalAlignment="Top" Width="193" FontSize="24" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Center" Height="131" Margin="0,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Foreground="Black" Background="White"><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sagittis, pellentesque nisl phasellus turpis. "/><LineBreak/><Run/><LineBreak/><Run Text="lorem ipsum "/><LineBreak/><Run Text="dolor sit amet "/><LineBreak/><Run Text="consectetur "/><LineBreak/><Run/><LineBreak/><Run Text="Facilisis arcu tincidunt urna imperdiet. Vel, faucibus orci lectus pretium faucibus auctor. Lectus duis risus sed tincidunt sit condimentum condimentum. "/></TextBlock>
-        <TextBlock HorizontalAlignment="Center" Height="136" Margin="0,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Foreground="Black" Background="White"><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sagittis, pellentesque nisl phasellus turpis. "/><LineBreak/><Run/><LineBreak/><Run Text="lorem ipsum "/><LineBreak/><Run Text="dolor sit amet "/><LineBreak/><Run Text="consectetur "/><LineBreak/><Run/><LineBreak/><Run Text="Facilisis arcu tincidunt urna imperdiet. Vel, faucibus orci lectus pretium faucibus auctor. Lectus duis risus sed tincidunt sit condimentum condimentum. "/></TextBlock>
-        <Rectangle HorizontalAlignment="Center" Height="74" Margin="0,419,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="308" Fill="Green"/>
-        <TextBlock HorizontalAlignment="Center" Height="62" Margin="0,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Foreground="White" Text="Tests Passed!" TextAlignment="Center" FontSize="24"/>
+        <TextBlock x:Name="LessonTitle" HorizontalAlignment="Left" Height="25" Margin="70,60,0,0" TextWrapping="Wrap" Text="Number: Title" VerticalAlignment="Top" Width="193" FontSize="24" Foreground="White"/>
+        <Rectangle x:Name="ColorRectangle" HorizontalAlignment="Center" Height="74" Stroke="Transparent" VerticalAlignment="Top" Width="308" Fill="Green" Margin="0,269,0,0"/>
+        <TextBlock x:Name="PassFailText" HorizontalAlignment="Center" Height="62" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Foreground="White" Text="Tests Passed!" TextAlignment="Center" FontSize="24" Margin="0,290,0,0"/>
         <Button x:Name="SubmitNextLesson" Content="Next Lesson" HorizontalAlignment="Center" Height="61" Margin="0,567,0,0" VerticalAlignment="Top" Width="196" Click="SubmitNextLesson_Click"/>
     </Grid>
 </UserControl>
