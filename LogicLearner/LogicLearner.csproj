@@ -7,6 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\circuits\1.png" />
+    <None Remove="Assets\circuits\11.png" />
+    <None Remove="Assets\circuits\12.png" />
+    <None Remove="Assets\circuits\13.png" />
+    <None Remove="Assets\circuits\14.png" />
+    <None Remove="Assets\circuits\15.png" />
+    <None Remove="Assets\circuits\2.png" />
+    <None Remove="Assets\circuits\3.png" />
+    <None Remove="Assets\circuits\4.png" />
+    <None Remove="Assets\circuits\5.png" />
+    <None Remove="Assets\circuits\6.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Emgu.CV.Bitmap" Version="4.5.3.4721" />
     <PackageReference Include="Emgu.CV.runtime.windows" Version="4.5.3.4721" />
     <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
@@ -14,6 +28,42 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WireFormSketch\WireFormSketch.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\circuits\1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\circuits\11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\circuits\12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\circuits\13.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\circuits\14.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\circuits\15.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\circuits\2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\circuits\3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\circuits\4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\circuits\5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\circuits\6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

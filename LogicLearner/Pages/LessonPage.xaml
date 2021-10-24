@@ -8,9 +8,9 @@
              d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
         <Button x:Name="LessonBack" Content="Back" HorizontalAlignment="Left" Height="29.75" Margin="23.75,37.75,0,0" VerticalAlignment="Top" Width="99.25" Click="LessonBack_Click"/>
-        <TextBlock HorizontalAlignment="Left" Height="34.25" Margin="37.5,119.75,0,0" TextWrapping="Wrap" Text="Number: Title" VerticalAlignment="Top" Width="265.25" FontSize="24" Foreground="White"/>
-        <Image HorizontalAlignment="Left" Height="180.583" Margin="0,177,0,0" VerticalAlignment="Top" Width="250"/>
-        <TextBlock HorizontalAlignment="Center" Height="194" Margin="0,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" Foreground="White"><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sagittis, pellentesque nisl phasellus turpis. "/><LineBreak/><Run/><LineBreak/><Run Text="lorem ipsum "/><LineBreak/><Run Text="dolor sit amet "/><LineBreak/><Run Text="consectetur "/><LineBreak/><Run/><LineBreak/><Run Text="Facilisis arcu tincidunt urna imperdiet. Vel, faucibus orci lectus pretium faucibus auctor. Lectus duis risus sed tincidunt sit condimentum condimentum. "/></TextBlock>
+        <TextBlock x:Name="LessonName" HorizontalAlignment="Left" Height="34" Margin="38,93,0,0" TextWrapping="Wrap" Text="Number: Title" VerticalAlignment="Top" Width="265" FontSize="24" Foreground="White"/>
+        <Image x:Name="LessonImage" HorizontalAlignment="Left" Height="181" Margin="0,150,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBlock x:Name="LessonText" HorizontalAlignment="Center" Height="233" Margin="0,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" Foreground="White"><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sagittis, pellentesque nisl phasellus turpis. "/><LineBreak/><Run/><LineBreak/><Run Text="lorem ipsum "/><LineBreak/><Run Text="dolor sit amet "/><LineBreak/><Run Text="consectetur "/><LineBreak/><Run/><LineBreak/><Run Text="Facilisis arcu tincidunt urna imperdiet. Vel, faucibus orci lectus pretium faucibus auctor. Lectus duis risus sed tincidunt sit condimentum condimentum. "/></TextBlock>
         <Button x:Name="SketchButton" Content="Sketch it!" Height="53.333" Margin="118,550,12,0" VerticalAlignment="Top" Width="178.333" Click="SketchButton_Click"/>
         <Button x:Name="NextLessonButton" Content="Next lesson" Height="53.333" Margin="118,610,12,0" VerticalAlignment="Top" Width="178.333" Click="NextLessonButton_Click"/>
 

@@ -15,7 +15,7 @@ namespace LogicLearner
         public List<string> Matches;
         public int PhotoNum;
         public bool Completed = false;
-        public BitmapImage Image { get => new(new Uri(@$"pack://application:,,,/images/{PhotoNum}.png")); }
+        public BitmapImage Image { get => new(new Uri(@$"pack://application:,,,/Assets/circuits/{PhotoNum}.png")); }
 
         public Lesson(int photoNum, string name, string text, string matches)
         {

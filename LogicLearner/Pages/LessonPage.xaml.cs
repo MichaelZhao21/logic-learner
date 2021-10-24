@@ -28,6 +28,7 @@ namespace LogicLearner.Pages
             InitializeComponent();
             this.lessonNum = lessonNum;
             this.isProblem = isProblem;
+            LoadLesson();
         }
 
         public delegate void LessonBackClick();
@@ -44,7 +45,20 @@ namespace LogicLearner.Pages
         private void NextLessonButton_Click(object sender, RoutedEventArgs e)
         {
             lessonNum++;
+            if (lessonNum >= LessonSet.Lessons.Count)
+            {
+                lessonNum--;
+            }
+            LoadLesson();
             // TODO: Increment lesson by changing content or smth
+        }
+
+        void LoadLesson()
+        {
+            var lesson = LessonSet.Lessons[lessonNum];
+            LessonName.Text = lesson.Name;
+            LessonText.Text = lesson.Text;
+            LessonImage.Source = lesson.Image;
         }
 
         private void LessonBack_Click(object sender, RoutedEventArgs e)
