@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="583" VerticalAlignment="Top" Width="308" Margin="0,21,0,0"/>
+        <Image x:Name="ImageBox" HorizontalAlignment="Left" Height="540" VerticalAlignment="Top" Width="303.75" Margin="0,21,0,0"/>
         <Button Content="Back" HorizontalAlignment="Left" Height="30.75" Margin="24,795.75,0,0" VerticalAlignment="Top" Width="104"/>
         <Button x:Name="CameraBackButton" Content="Back" HorizontalAlignment="Left" Height="30.75" Margin="24,621,0,0" VerticalAlignment="Top" Width="104" Click="CameraBackButton_Click"/>
         <Button x:Name="SubmitButton" Content="Submit" Height="30.75" Margin="180,621,24,0" VerticalAlignment="Top" Width="104" Click="SubmitButton_Click"/>

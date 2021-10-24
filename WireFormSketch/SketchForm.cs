@@ -90,7 +90,7 @@ namespace Wireform.Sketch
         {
             capture?.Dispose();
             //capture = new VideoCapture(1);
-            capture = new VideoCapture(1);
+            capture = new VideoCapture(0);
             ExposureBar_Scroll(this, null);
             ResolutionChanged(this, null);
         }
