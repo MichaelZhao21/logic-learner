@@ -46,7 +46,7 @@ namespace LogicLearner.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            startLessonEvent(0, false); // Starts lesson 0 (1)
+            startLessonEvent(1, false); // Starts lesson 2
         }
     }
 }

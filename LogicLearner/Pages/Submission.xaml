@@ -7,9 +7,16 @@
              mc:Ignorable="d" 
              d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
-        <TextBlock x:Name="LessonTitle" HorizontalAlignment="Left" Height="25" Margin="70,60,0,0" TextWrapping="Wrap" Text="Number: Title" VerticalAlignment="Top" Width="193" FontSize="24" Foreground="White"/>
-        <Rectangle x:Name="ColorRectangle" HorizontalAlignment="Center" Height="74" Stroke="Transparent" VerticalAlignment="Top" Width="308" Fill="Green" Margin="0,269,0,0"/>
-        <TextBlock x:Name="PassFailText" HorizontalAlignment="Center" Height="62" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Foreground="White" Text="Tests Passed!" TextAlignment="Center" FontSize="24" Margin="0,290,0,0"/>
-        <Button x:Name="SubmitNextLesson" Content="Next Lesson" HorizontalAlignment="Center" Height="61" Margin="0,567,0,0" VerticalAlignment="Top" Width="196" Click="SubmitNextLesson_Click"/>
+        <Ellipse x:Name="ColorRectangle" HorizontalAlignment="Center" Height="239" Margin="0,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="239" Fill="#FF01940F"/>
+        <TextBlock x:Name="LessonTitle" Height="39" Margin="12,80,12,0" TextWrapping="Wrap" Text="Number: Title" VerticalAlignment="Top" Width="283" FontSize="24" Foreground="White" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="PassFailText" HorizontalAlignment="Center" Height="91" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" Foreground="White" Text="Tests Passed!" TextAlignment="Center" FontSize="32" Margin="0,259,0,0" FontWeight="Bold"/>
+        <Button x:Name="SubmitNextLesson" Content="Next Lesson" HorizontalAlignment="Center" Height="61" Margin="0,514,0,0" VerticalAlignment="Top" Width="196" Click="SubmitNextLesson_Click" Background="#FFFDB03C" BorderBrush="#FFFDB03C" FontWeight="Bold" FontSize="24">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="SubmitNextLesson_Copy" Content="Back to Dashboard" HorizontalAlignment="Center" Height="43" Margin="0,594,0,0" VerticalAlignment="Top" Width="125" Click="SubmitNextLesson_Click" Background="Transparent" BorderBrush="Transparent" Foreground="White" FontWeight="Bold"/>
     </Grid>
 </UserControl>

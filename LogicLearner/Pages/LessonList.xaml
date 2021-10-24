@@ -7,9 +7,24 @@
              mc:Ignorable="d" 
              d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
+        <Button Height="70" Margin="22,592,26,0" VerticalAlignment="Top" Width="260" Click="Button_Click" Background="#FFD0D0D0" BorderBrush="#FFD0D0D0" BorderThickness="3,3,3,3">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="56.25" Margin="10,789.75,0,0" Stroke="Black" VerticalAlignment="Top" Width="391" RadiusX="16" RadiusY="16"/>
-        <TextBlock HorizontalAlignment="Left" Height="59" Margin="25,23.667,0,0" TextWrapping="Wrap" Text="Lessons" VerticalAlignment="Top" Width="267.667" FontSize="24" Foreground="White"/>
-        <Button Content="1: Introduction" HorizontalAlignment="Stretch" Height="47" Margin="0,88,0,0" VerticalAlignment="Top" Width="260" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="41" Margin="25,14,0,0" TextWrapping="Wrap" Text="Lessons" VerticalAlignment="Top" Width="224" FontSize="32" Foreground="White" FontWeight="Bold"/>
+        <Button Height="70" Margin="24,78,24,0" VerticalAlignment="Top" Width="260" Click="Button_Click" Background="#FF3FA9F5" BorderBrush="#FF3FA9F5" BorderThickness="3,3,3,3">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <TextBlock x:Name="Button1Name" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Center" Width="178" FontFamily="Segoe UI" FontSize="24" FontWeight="Bold" TextAlignment="Left" Foreground="Black" Margin="-50,0,0,0"><Run Language="zh-cn" Text="1: Introduction"/></TextBlock>
+        </Button>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="44" Margin="0,620,0,0" Stroke="Black" VerticalAlignment="Top" Width="302" RadiusX="16" RadiusY="16"/>
         <Button HorizontalAlignment="Left" Height="44" Margin="22,620,0,0" VerticalAlignment="Top" Width="73" BorderBrush="Transparent" Background="Transparent">
             <Grid>
@@ -26,6 +41,49 @@
         <TextBlock HorizontalAlignment="Left" Height="15" Margin="38,647,0,0" Text="Lessons" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" FontFamily="Segoe UI" FontWeight="SemiBold" TextAlignment="Center" Foreground="Black" FontSize="10"/>
         <TextBlock HorizontalAlignment="Left" Height="15" Margin="136,647,0,0" Text="Profile" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" FontFamily="Segoe UI" FontWeight="SemiBold" TextAlignment="Center" Foreground="Black" FontSize="10"/>
         <TextBlock HorizontalAlignment="Left" Height="15" Margin="226,647,0,0" Text="Problems" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" FontFamily="Segoe UI" FontWeight="SemiBold" TextAlignment="Center" Foreground="Black" FontSize="10"/>
+        <Button Height="70" Margin="24,163,24,0" VerticalAlignment="Top" Width="260" Click="Button_Click" Background="#FF3FA9F5" BorderBrush="#FF3FA9F5" BorderThickness="3,3,3,3">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Rectangle Height="5" Margin="25,57,147,0" Stroke="Black" VerticalAlignment="Top" Fill="#FFFEE860"/>
+        <TextBlock x:Name="Button1Name_Copy" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontFamily="Segoe UI" FontSize="24" FontWeight="Bold" TextAlignment="Left" Foreground="Black" Margin="38,180,0,0"><Run Language="zh-cn" Text="2: Power Source"/></TextBlock>
+        <Button Height="70" Margin="24,250,24,0" VerticalAlignment="Top" Width="260" Click="Button_Click" Background="White" BorderBrush="#FF3FA9F5" BorderThickness="3,3,3,3">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <TextBlock x:Name="Button1Name1" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Center" Width="178" FontFamily="Segoe UI" FontSize="24" FontWeight="Bold" TextAlignment="Left" Foreground="Black" Margin="-50,0,0,0"><Run Language="zh-cn" Text="3: "/><Run Text="NOT"/><Run Language="zh-cn" Text=" Gate"/></TextBlock>
+        </Button>
+        <Button Height="70" Margin="24,335,24,0" VerticalAlignment="Top" Width="260" Click="Button_Click" Background="#FFD0D0D0" BorderBrush="#FFD0D0D0" BorderThickness="3,3,3,3">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock x:Name="Button1Name_Copy1" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontFamily="Segoe UI" FontSize="24" FontWeight="Bold" TextAlignment="Left" Foreground="Black" Margin="38,352,0,0" Text="4: AND Gate"/>
+        <Button Height="70" Margin="24,423,24,0" VerticalAlignment="Top" Width="260" Click="Button_Click" Background="#FFD0D0D0" BorderBrush="#FFD0D0D0" BorderThickness="3,3,3,3">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <TextBlock x:Name="Button1Name2" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Center" Width="178" FontFamily="Segoe UI" FontSize="24" FontWeight="Bold" TextAlignment="Left" Foreground="Black" Margin="-50,0,0,0" Text="5: OR Gate"/>
+        </Button>
+        <Button Height="70" Margin="24,508,24,0" VerticalAlignment="Top" Width="260" Click="Button_Click" Background="#FFD0D0D0" BorderBrush="#FFD0D0D0" BorderThickness="3,3,3,3">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock x:Name="Button1Name_Copy2" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontFamily="Segoe UI" FontSize="24" FontWeight="Bold" TextAlignment="Left" Foreground="Black" Margin="38,525,0,0" Text="6: XOR Gate"/>
+        <Image HorizontalAlignment="Left" Height="18" Margin="254,104,0,0" VerticalAlignment="Top" Width="18" Source="/Pages/done.png"/>
+        <Image HorizontalAlignment="Left" Height="18" Margin="254,190,0,0" VerticalAlignment="Top" Width="18" Source="/Pages/done.png"/>
 
     </Grid>
 </UserControl>

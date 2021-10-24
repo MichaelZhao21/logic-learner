@@ -7,12 +7,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
-        <Image x:Name="ImageBox" HorizontalAlignment="Left" Height="568" VerticalAlignment="Top" Width="308" Margin="0,31,0,0"/>
+        <Image x:Name="ImageBox" HorizontalAlignment="Left" Height="545" VerticalAlignment="Top" Width="308" Margin="0,44,0,0"/>
         <Button Content="Back" HorizontalAlignment="Left" Height="30.75" Margin="24,795.75,0,0" VerticalAlignment="Top" Width="104"/>
-        <Button x:Name="CameraBackButton" Content="Back" HorizontalAlignment="Left" Height="30.75" Margin="24,621,0,0" VerticalAlignment="Top" Width="104" Click="CameraBackButton_Click"/>
-        <Button x:Name="SubmitButton" Content="Submit" Height="30.75" Margin="180,621,24,0" VerticalAlignment="Top" Width="104" Click="SubmitButton_Click"/>
-        <Rectangle HorizontalAlignment="Center" Height="476" Margin="0,71,0,0" Stroke="#FF01940F" VerticalAlignment="Top" Width="233" RadiusX="30" RadiusY="30" StrokeThickness="3"/>
-        <TextBlock HorizontalAlignment="Center" Height="24" Margin="0,560,0,0" Text="Place your sketch in the frame" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" TextAlignment="Center" Foreground="White"/>
+        <Button x:Name="CameraBackButton" Content="&lt; Back" HorizontalAlignment="Left" Height="23" Margin="22,622,0,0" VerticalAlignment="Top" Width="54" Click="CameraBackButton_Click" FontSize="10" Background="#00DDDDDD" BorderBrush="#00DDDDDD" Foreground="White" FontWeight="Bold"/>
+        <Ellipse HorizontalAlignment="Center" Height="59" Margin="0,605,0,0" Stroke="#FFFDB03C" VerticalAlignment="Top" Width="59" Fill="#FFFDB03C"/>
+        <Button x:Name="SubmitButton" Content="Submit" Height="19" Margin="128,624,128,0" VerticalAlignment="Top" Click="SubmitButton_Click" Background="#00DDDDDD" BorderBrush="#00DDDDDD" Foreground="White" FontWeight="Bold"/>
+        <Rectangle HorizontalAlignment="Center" Height="476" Margin="0,61,0,0" Stroke="#FF01940F" VerticalAlignment="Top" Width="233" RadiusX="30" RadiusY="30" StrokeThickness="3"/>
+        <TextBlock HorizontalAlignment="Center" Height="24" Margin="0,550,0,0" Text="Place your sketch in the frame" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" TextAlignment="Center" Foreground="White"/>
 
     </Grid>
 </UserControl>

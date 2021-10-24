@@ -7,12 +7,27 @@
              mc:Ignorable="d" 
              d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
-        <Button x:Name="LessonBack" Content="Back" HorizontalAlignment="Left" Height="29.75" Margin="23.75,37.75,0,0" VerticalAlignment="Top" Width="99.25" Click="LessonBack_Click"/>
-        <TextBlock x:Name="LessonName" HorizontalAlignment="Left" Height="34" Margin="38,93,0,0" TextWrapping="Wrap" Text="Number: Title" VerticalAlignment="Top" Width="265" FontSize="24" Foreground="White"/>
-        <Image x:Name="LessonImage" HorizontalAlignment="Center" Height="181" Margin="0,156,0,0" VerticalAlignment="Top" Width="250"/>
-        <TextBlock x:Name="LessonText" HorizontalAlignment="Center" Height="233" Margin="0,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" Foreground="White"><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sagittis, pellentesque nisl phasellus turpis. "/><LineBreak/><Run/><LineBreak/><Run Text="lorem ipsum "/><LineBreak/><Run Text="dolor sit amet "/><LineBreak/><Run Text="consectetur "/><LineBreak/><Run/><LineBreak/><Run Text="Facilisis arcu tincidunt urna imperdiet. Vel, faucibus orci lectus pretium faucibus auctor. Lectus duis risus sed tincidunt sit condimentum condimentum. "/></TextBlock>
-        <Button x:Name="SketchButton" Content="Sketch it!" Height="53.333" Margin="118,550,12,0" VerticalAlignment="Top" Width="178.333" Click="SketchButton_Click"/>
-        <Button x:Name="NextLessonButton" Content="Next lesson" Height="53.333" Margin="118,610,12,0" VerticalAlignment="Top" Width="178.333" Click="NextLessonButton_Click"/>
+        <Button x:Name="LessonBack" Content="&lt; Lessons         " HorizontalAlignment="Left" Height="19" Margin="26,14,0,0" VerticalAlignment="Top" Width="74" Click="LessonBack_Click" FontWeight="Bold" Foreground="White" BorderBrush="#00707070" Background="#00DDDDDD"/>
+        <Rectangle HorizontalAlignment="Center" Height="244" Margin="0,312,0,0" Stroke="#FF3FA9F5" VerticalAlignment="Top" Width="260" Fill="White" RadiusX="10" RadiusY="10" StrokeThickness="3"/>
+        <TextBlock x:Name="LessonName" HorizontalAlignment="Left" Height="34" Margin="31,54,0,0" TextWrapping="Wrap" Text="Number: Title" VerticalAlignment="Top" Width="265" FontSize="24" Foreground="White" FontWeight="Bold"/>
+        <Rectangle Height="190" Margin="24,102,24,0" VerticalAlignment="Top" Width="260" RadiusX="10" RadiusY="10" Fill="White"/>
+        <Image x:Name="LessonImage" Height="181" Margin="0,108,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="LessonText" HorizontalAlignment="Center" Height="228" Margin="0,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Foreground="Black"><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sagittis, pellentesque nisl phasellus turpis. "/><LineBreak/><Run/><LineBreak/><Run Text="lorem ipsum "/><LineBreak/><Run Text="dolor sit amet "/><LineBreak/><Run Text="consectetur "/><LineBreak/><Run/><LineBreak/><Run Text="Facilisis arcu tincidunt urna imperdiet. Vel, faucibus orci lectus pretium faucibus auctor. Lectus duis risus sed tincidunt sit condimentum condimentum. "/></TextBlock>
+        <Button x:Name="SketchButton" Content="Sketch it!                  &gt;" Height="28" Margin="106,576,23,0" VerticalAlignment="Top" Width="178.333" Click="SketchButton_Click" BorderBrush="#FF01940F" Background="#FF01940F" FontWeight="Bold" Foreground="White" FontSize="16">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="NextLessonButton" Content="Next lesson   &gt;" Height="28" Margin="152,616,24,0" VerticalAlignment="Top" Click="NextLessonButton_Click" BorderBrush="#FFFDB03C" Background="#FFFDB03C" FontWeight="Bold" Foreground="Black" FontSize="16">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Rectangle Height="4" Margin="40,33,0,0" Stroke="Black" VerticalAlignment="Top" Fill="#FFFEE860" HorizontalAlignment="Left" Width="45"/>
 
     </Grid>
 </UserControl>

@@ -21,7 +21,9 @@
     <None Remove="Pages\bear.png" />
     <None Remove="Pages\blue-splash.png" />
     <None Remove="Pages\book-icon.png" />
+    <None Remove="Pages\done.png" />
     <None Remove="Pages\loading.png" />
+    <None Remove="Pages\logo.png" />
     <None Remove="Pages\orange-splash.png" />
     <None Remove="Pages\pencil-icon.png" />
     <None Remove="Pages\profile-icon.png" />
@@ -78,7 +80,9 @@
     <Resource Include="Pages\bear.png" />
     <Resource Include="Pages\blue-splash.png" />
     <Resource Include="Pages\book-icon.png" />
+    <Resource Include="Pages\done.png" />
     <Resource Include="Pages\loading.png" />
+    <Resource Include="Pages\logo.png" />
     <Resource Include="Pages\orange-splash.png" />
     <Resource Include="Pages\pencil-icon.png" />
     <Resource Include="Pages\profile-icon.png" />
