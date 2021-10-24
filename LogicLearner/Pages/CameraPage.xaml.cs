@@ -67,7 +67,7 @@ namespace LogicLearner.Pages
         bool captureWireform = true;
 
         const float distCutoff = 30000f;
-bool clicked = false;
+        bool clicked = false;
         private void LoadFrame(object sender, EventArgs e)
         {
 ////load a frame from the camera
@@ -85,16 +85,16 @@ bool clicked = false;
             }
 
             MainWindow.sketcher.ProcessFrame(frame, captureWireform);
-if (captureWireform)
-{
-captureWireform = false;
-}
+            if (captureWireform)
+            {
+            captureWireform = false;
+            }
             else if (MainWindow.sketcher.f_transformationG != null)
             {
                 var input = Mouse.GetPosition(ImageBox);
                 PointF[] points = CvInvoke.PerspectiveTransform(new PointF[] { new PointF((float)input.X * 2*16/9f, (float)input.Y * 2*16/9f) }, MainWindow.sketcher.f_transformationG);
-CvInvoke.DrawMarker(frame, new System.Drawing.Point((int)input.X, (int)input.Y), new MCvScalar(), MarkerTypes.Cross, thickness:3);
-CvInvoke.DrawMarker(frame, new System.Drawing.Point((int)points[0].X, (int)points[0].Y), new MCvScalar(), MarkerTypes.Star, thickness: 3);
+//CvInvoke.DrawMarker(frame, new System.Drawing.Point((int)input.X, (int)input.Y), new MCvScalar(), MarkerTypes.Cross, thickness:3);
+//CvInvoke.DrawMarker(frame, new System.Drawing.Point((int)points[0].X, (int)points[0].Y), new MCvScalar(), MarkerTypes.Star, thickness: 3);
 
                 BitSource minGate = null;
                 float minDist = float.MaxValue;
@@ -106,7 +106,7 @@ CvInvoke.DrawMarker(frame, new System.Drawing.Point((int)points[0].X, (int)point
                         minDist = dist;
                         minGate = (BitSource)gate;
                     }
-                    CvInvoke.DrawMarker(frame, new System.Drawing.Point((int)gate.StartPoint.X, (int)gate.StartPoint.Y), new MCvScalar(255, 0, 255), MarkerTypes.Diamond, thickness: 3);
+                    //CvInvoke.DrawMarker(frame, new System.Drawing.Point((int)gate.StartPoint.X, (int)gate.StartPoint.Y), new MCvScalar(255, 0, 255), MarkerTypes.Diamond, thickness: 3);
                 }
                 if (Mouse.LeftButton == MouseButtonState.Pressed && !clicked)
                 {
@@ -123,8 +123,8 @@ CvInvoke.DrawMarker(frame, new System.Drawing.Point((int)points[0].X, (int)point
                         {
                             minGate.Value = BitValue.Zero;
                         }
-else
-{
+                        else
+                        {
                             minGate.Value = BitValue.One;
                         }
                         MainWindow.sketcher.boardStack.CurrentState.Propogate();
