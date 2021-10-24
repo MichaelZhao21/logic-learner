@@ -115,7 +115,6 @@ namespace LogicLearner.Pages
                     {
                         captureWireform = true;
                         var text = MainWindow.GetConnections(MainWindow.sketcher.boardStack.CurrentState);
-                        File.WriteAllLines(@"C:\Users\rhala\Code\Calhacks\circuit.txt", text);
                     }
                     else
                     {

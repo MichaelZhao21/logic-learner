@@ -7,8 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid UIElement.MouseDown="Grid_MouseDown">
-        <TextBlock HorizontalAlignment="Center" Height="58.73" Margin="61.096,257.449,61.096,0" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" Width="288.808" FontSize="48" TextAlignment="Center" FontFamily="Work Sans" FontWeight="Bold" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Center" Height="120" Margin="0,162,0,0" TextWrapping="Wrap" Text="Logic Learner" VerticalAlignment="Top" Width="288.808" FontSize="48" TextAlignment="Center" FontFamily="Work Sans" FontWeight="Bold" Foreground="White"/>
         <TextBlock HorizontalAlignment="Center" Height="46.636" Margin="0,598,0,0" TextWrapping="Wrap" Text="Click to Start" VerticalAlignment="Top" Width="288.808" FontSize="40" TextAlignment="Center" FontFamily="Work Sans" Foreground="#FF3FA9F5"/>
+        <Image Height="177" Margin="66,308,66,187" Width="177" Source="/Pages/loading.png"/>
 
     </Grid>
 </UserControl>

@@ -18,6 +18,16 @@
     <None Remove="Assets\circuits\4.png" />
     <None Remove="Assets\circuits\5.png" />
     <None Remove="Assets\circuits\6.png" />
+    <None Remove="Pages\bear.png" />
+    <None Remove="Pages\blue-splash.png" />
+    <None Remove="Pages\book-icon.png" />
+    <None Remove="Pages\loading.png" />
+    <None Remove="Pages\orange-splash.png" />
+    <None Remove="Pages\pencil-icon.png" />
+    <None Remove="Pages\profile-icon.png" />
+    <None Remove="Pages\right-arrow.png" />
+    <None Remove="Pages\settings.png" />
+    <None Remove="Pages\yellow-splash.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -64,6 +74,16 @@
     <Resource Include="Assets\circuits\6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Assets\right-arrow.png" />
+    <Resource Include="Pages\bear.png" />
+    <Resource Include="Pages\blue-splash.png" />
+    <Resource Include="Pages\book-icon.png" />
+    <Resource Include="Pages\loading.png" />
+    <Resource Include="Pages\orange-splash.png" />
+    <Resource Include="Pages\pencil-icon.png" />
+    <Resource Include="Pages\profile-icon.png" />
+    <Resource Include="Pages\settings.png" />
+    <Resource Include="Pages\yellow-splash.png" />
   </ItemGroup>
 
 </Project>

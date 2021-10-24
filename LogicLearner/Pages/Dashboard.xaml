@@ -7,16 +7,60 @@
              mc:Ignorable="d" 
              d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
-        <Ellipse Fill="#FFF4F4F5" Height="112" Margin="100,92,97,0" Stroke="Black" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="59,232,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="182" Background="Transparent" BorderBrush="Transparent" FontSize="24" Foreground="White" TextAlignment="Center"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="110" Margin="171,412,0,0" Stroke="Black" VerticalAlignment="Top" Width="110"/>
-        <Button Content="Practice Problems" HorizontalAlignment="Left" Height="46" Margin="10,350,0,0" VerticalAlignment="Top" Width="291" Click="Button_Click"/>
-        <Button x:Name="ContinueButton" Content="Continue Next Lesson" HorizontalAlignment="Left" Height="46" Margin="10,287,0,0" VerticalAlignment="Top" Width="291" Click="ContinueButton_Click"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="110" Margin="27,412,0,0" Stroke="Black" VerticalAlignment="Top" Width="110"/>
+        <Ellipse Fill="#FFF4F4F5" Height="147" Margin="80,58,80,0" Stroke="#FFFDB03C" VerticalAlignment="Top" StrokeThickness="7"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="127" Margin="171,442,0,0" Stroke="#FF3FA9F5" VerticalAlignment="Top" Width="127" RadiusX="10" RadiusY="10" StrokeThickness="3"/>
+        <Button Content="" HorizontalAlignment="Center" Height="54" Margin="0,360,0,0" VerticalAlignment="Top" Width="291" Click="Button_Click" Background="White" BorderBrush="#FF3FA9F5" BorderThickness="3,3,3,3">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="ContinueButton" Content="" HorizontalAlignment="Center" Height="54" Margin="0,287,0,0" VerticalAlignment="Top" Width="291" Click="ContinueButton_Click" Background="White" BorderBrush="#FF3FA9F5" BorderThickness="3,3,3,3">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="127" Margin="10,442,0,0" Stroke="#FF3FA9F5" VerticalAlignment="Top" Width="127" RadiusX="10" RadiusY="10" StrokeThickness="3"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="44" Margin="0,620,0,0" Stroke="Black" VerticalAlignment="Top" Width="302" RadiusX="16" RadiusY="16"/>
-        <Button Content="Lessons" HorizontalAlignment="Left" Height="44" Margin="22,620,0,0" VerticalAlignment="Top" Width="73" Click="Button_Click_1"/>
-        <Button Content="Dashboard" HorizontalAlignment="Left" Height="44" Margin="121,620,0,0" VerticalAlignment="Top" Width="73"/>
-        <Button Content="Problems" HorizontalAlignment="Left" Height="44" Margin="213,620,0,0" VerticalAlignment="Top" Width="73" Click="Button_Click_3"/>
+        <Button HorizontalAlignment="Left" Height="44" Margin="22,620,0,0" VerticalAlignment="Top" Width="73" Click="Button_Click_1" BorderBrush="Transparent" Background="Transparent">
+            <Image HorizontalAlignment="Center" Height="22" VerticalAlignment="Top" Width="22" Source="/Pages/book-icon.png" Margin="0,-10,0,0"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="44" Margin="121,620,0,0" VerticalAlignment="Top" Width="73" BorderBrush="Transparent" Background="Transparent">
+            <Grid>
+                <Image Margin="10,-7,8,4" Source="/Pages/blue-splash.png"/>
+                <Image HorizontalAlignment="Center" Height="22" VerticalAlignment="Top" Width="22" Source="/Pages/profile-icon.png" Margin="0,-7,0,0"/>
+            </Grid>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="44" Margin="213,620,0,0" VerticalAlignment="Top" Width="73" Click="Button_Click_3" BorderBrush="Transparent" Background="Transparent">
+            <Image HorizontalAlignment="Center" Height="22" VerticalAlignment="Top" Width="22" Source="/Pages/pencil-icon.png" Margin="0,-10,0,0"/>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="41,303,0,0" Text="Continue Next Lesson" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold" TextAlignment="Left" Foreground="Black"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="261,301,0,0" VerticalAlignment="Top" Width="25" Source="/Assets/right-arrow.png"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="41,375,0,0" Text="Practice Problems" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold" TextAlignment="Left" Foreground="Black"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="261,373,0,0" VerticalAlignment="Top" Width="25" Source="/Assets/right-arrow.png"/>
+        <TextBlock HorizontalAlignment="Center" Height="31" Margin="0,226,0,0" Text="CalHacks Hacker" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontFamily="Segoe UI" FontSize="20" FontWeight="Bold" TextAlignment="Center" Foreground="White"/>
+        <Rectangle Height="6" Margin="68,257,68,0" Stroke="Black" VerticalAlignment="Top" Width="172" Fill="#FFFEE860"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="41,375,0,0" Text="Practice Problems" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold" TextAlignment="Left" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="3,458,0,0" Text="Lessons" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold" TextAlignment="Center" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="166,458,0,0" Text="Problems" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold" TextAlignment="Center" Foreground="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="16" Margin="27,495,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="95" Fill="#FFC4C4C4" RadiusX="5" RadiusY="5"/>
+        <Rectangle HorizontalAlignment="Left" Height="16" Margin="27,495,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="8" Fill="#FF01940F" RadiusX="5" RadiusY="5"/>
+        <Rectangle HorizontalAlignment="Left" Height="16" Margin="186,495,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="95" Fill="#FFC4C4C4" RadiusX="5" RadiusY="5"/>
+        <Rectangle HorizontalAlignment="Left" Height="16" Margin="186,495,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="42" Fill="#FF01940F" RadiusX="5" RadiusY="5"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="3,458,0,0" Text="Lessons" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold" TextAlignment="Center" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Height="27" Margin="27,516,0,0" Text="2/60" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" FontFamily="Segoe UI" FontSize="20" FontWeight="Bold" TextAlignment="Center" Foreground="#FF01940F"/>
+        <TextBlock HorizontalAlignment="Left" Height="27" Margin="187,516,0,0" Text="43/125" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" FontFamily="Segoe UI" FontSize="20" FontWeight="Bold" TextAlignment="Center" Foreground="#FF01940F"/>
+        <TextBlock HorizontalAlignment="Left" Height="27" Margin="27,516,0,0" Text="2/60" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" FontFamily="Segoe UI" FontSize="20" FontWeight="Bold" TextAlignment="Center" Foreground="#FF01940F"/>
+        <TextBlock HorizontalAlignment="Left" Height="27" Margin="27,542,0,0" Text="COMPLETED" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" FontFamily="Segoe UI" FontWeight="Bold" TextAlignment="Center" Foreground="#FF01940F" FontSize="10"/>
+        <TextBlock HorizontalAlignment="Left" Height="27" Margin="187,542,0,0" Text="COMPLETED" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" FontFamily="Segoe UI" FontWeight="Bold" TextAlignment="Center" Foreground="#FF01940F" FontSize="10"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="38,647,0,0" Text="Lessons" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" FontFamily="Segoe UI" FontWeight="SemiBold" TextAlignment="Center" Foreground="Black" FontSize="10"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="136,647,0,0" Text="Profile" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" FontFamily="Segoe UI" FontWeight="SemiBold" TextAlignment="Center" Foreground="Black" FontSize="10"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="226,647,0,0" Text="Problems" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" FontFamily="Segoe UI" FontWeight="SemiBold" TextAlignment="Center" Foreground="Black" FontSize="10"/>
+        <Image Height="136" Margin="86,65,86,0" VerticalAlignment="Top" Source="/Pages/bear.png"/>
+        <Image HorizontalAlignment="Left" Height="32" Margin="257,20,0,0" VerticalAlignment="Top" Width="32" Source="/Pages/settings.png"/>
 
     </Grid>
 </UserControl>
