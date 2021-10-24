@@ -28,6 +28,7 @@ namespace LogicLearner.Pages
             InitializeComponent();
             this.lessonNum = lessonNum;
             this.isProblem = isProblem;
+            //MainWindow.setImage = (image
         }
 
         public delegate void CameraBackClick(int lessonNum, bool isProblem);
