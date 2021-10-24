@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="LogicLearner.Pages.Welcome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LogicLearner.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="856" d:DesignWidth="411" Background="#FF1E2E6C">
+    <Grid UIElement.MouseDown="Grid_MouseDown">
+        <TextBlock HorizontalAlignment="Center" Height="58.73" Margin="61.096,257.449,61.096,0" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" Width="288.808" FontSize="48" TextAlignment="Center" FontFamily="Work Sans" FontWeight="Bold" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Center" Height="46.636" Margin="61.096,788.598,61.096,0" TextWrapping="Wrap" Text="Click to Start" VerticalAlignment="Top" Width="288.808" FontSize="40" TextAlignment="Center" FontFamily="Work Sans" Foreground="#FF3FA9F5"/>
+
+    </Grid>
+</UserControl>
