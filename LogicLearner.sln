@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLearner", "LogicLearner\LogicLearner.csproj", "{AF791FA9-13FA-491B-94A5-8AECA38E9DE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicLearner", "LogicLearner\LogicLearner.csproj", "{AF791FA9-13FA-491B-94A5-8AECA38E9DE4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireFormSketch", "WireFormSketch\WireFormSketch.csproj", "{D0942643-1A7D-4A53-8D2B-99012C542DCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireForm", "WireForm\WireForm.csproj", "{721360EB-0FE4-4811-B0BD-48CEABD971C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{AF791FA9-13FA-491B-94A5-8AECA38E9DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF791FA9-13FA-491B-94A5-8AECA38E9DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF791FA9-13FA-491B-94A5-8AECA38E9DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0942643-1A7D-4A53-8D2B-99012C542DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0942643-1A7D-4A53-8D2B-99012C542DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0942643-1A7D-4A53-8D2B-99012C542DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0942643-1A7D-4A53-8D2B-99012C542DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{721360EB-0FE4-4811-B0BD-48CEABD971C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721360EB-0FE4-4811-B0BD-48CEABD971C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721360EB-0FE4-4811-B0BD-48CEABD971C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721360EB-0FE4-4811-B0BD-48CEABD971C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
