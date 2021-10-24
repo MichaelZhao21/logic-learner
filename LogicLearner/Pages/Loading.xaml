@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:LogicLearner.Pages"
              mc:Ignorable="d" 
-             d:DesignHeight="856" d:DesignWidth="411" Background="#FF1E2E6C">
+             d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
         <Image Height="177" Margin="0" Width="177" Source="../Assets/loading.png"/>
 
