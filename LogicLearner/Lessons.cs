@@ -23,6 +23,12 @@ namespace LogicLearner
             Name = name;
             Text = text;
             Matches = matches.Split('\n').ToList();
+            for(int i = 0; i < Matches.Count; i++)
+            {
+                if (Matches[i].Length == 0) continue;
+                if (Matches[i][Matches[i].Length - 1] != '\r') continue;
+                Matches[i] = Matches[i].Substring(0, Matches[i].Length - 1);
+            }
         }
 
     }

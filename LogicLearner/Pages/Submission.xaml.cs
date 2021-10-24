@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,8 +24,9 @@ namespace LogicLearner.Pages
         private int lessonNum;
         private bool isProblem;
 
-        public Submission(int lessonNum, bool isProblem)
+        public Submission(int lessonNum, bool isProblem, bool solution)
         {
+            Debug.WriteLine(solution);
             InitializeComponent();
             this.lessonNum = lessonNum;
             this.isProblem = isProblem;

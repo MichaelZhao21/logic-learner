@@ -105,7 +105,8 @@ namespace LogicLearner.Pages
 
         private void openSubmit(int lessonNum, bool isProblem)
         {
-            Submission submit = new Submission(lessonNum, isProblem);
+            bool isCorrect = CheckEquivalent(LessonSet.Lessons[lessonNum ].Matches, GetConnections(sketcher.boardStack.CurrentState));
+            Submission submit = new Submission(lessonNum, isProblem, isCorrect);
             this.Content = submit.Content;
             submit.submitNextLessonButtonClickEvent += new LogicLearner.Pages.Submission.SubmitNextLessonButtonClick(openLesson);
         }
@@ -131,5 +132,100 @@ namespace LogicLearner.Pages
             capture.Set(CapProp.Exposure, 10);
         }
 
+
+        public bool CheckEquivalent(List<string> first, List<string> other)
+        {
+            first.Sort();
+            other.Sort();
+            return first.Zip(other, string.Equals).All(x => x);
+        }
+
+
+        ///// <summary>
+        ///// Checks if two circuits are 'equivalent' (as in, they have the same pathways)
+        ///// </summary>
+        //public bool IsEquivalent(BoardState state, BoardState other)
+        //{
+        //    List<Gate> stateSources = state.Gates.Where(x => x is BitSource).ToList();
+        //    List<Gate> otherSources = other.Gates.Where(x => x is BitSource).ToList();
+        //    foreach(var ssource in stateSources)
+        //    {
+        //        bool eq = false;
+        //        for(int i = 0; i < otherSources.Count; i++)
+        //        {
+        //            if(sourceEq(ssource, otherSources[i], new HashSet<Gate>()))
+        //            {
+        //                eq = true;
+        //                otherSources.RemoveAt(i);
+        //                break;
+        //            }
+        //        }
+        //        if (!eq) return false;
+        //    }
+        //    return true;
+
+        //    static bool sourceEq(Gate ssource, Gate osource, HashSet<Gate> visited)
+        //    {
+        //        visited.Add(ssource);
+        //        visited.Add(osource);
+
+        //        HashSet<Gate> soutputs = new HashSet<Gate>();
+        //        HashSet<Gate> ooutputs = new HashSet<Gate>();
+
+        //        HashSet<WireLine> visitedW = new HashSet<WireLine>();
+        //    }
+        //}
+
+        /// <summary>
+        /// Gets all the connections of a circuit. Essentially a text representation of a circuit's connections
+        /// </summary>
+        /// <returns>set of (gate name, gate name) pairs. (output pin's gate name, input pin's gate name). List is sorted.
+        /// Prepended to that is a list of all gate names, also sorted.</returns>
+        public static List<string> GetConnections(BoardState state)
+        {
+            List<string> pairs = new List<string>();
+            HashSet<DrawableObject> visited = new HashSet<DrawableObject>();
+            foreach (var gate in state.Gates)
+            {
+                foreach (var output in gate.Outputs)
+                {
+                    if (!state.Connections.ContainsKey(output.StartPoint)) continue;
+                    visited.Clear();
+
+                    var connects = state.Connections[output.StartPoint].ToList();
+
+
+                    for (int i = 0; i < connects.Count; i++)
+                    {
+                        if (visited.Contains(connects[i])) continue;
+                        visited.Add(connects[i]);
+                        if (connects[i] is GatePin pin && pin.Parent != gate)
+                        {
+                            pairs.Add($"({gate.GetType().Name}, {pin.Parent.GetType().Name})");
+                        }
+                        else if (connects[i] is WireLine wire)
+                        {
+                            //this is slow, fix it
+                            if (state.Connections.ContainsKey(wire.StartPoint))
+                            {
+                                connects.AddRange(state.Connections[wire.StartPoint]);
+                            }
+
+                            if (state.Connections.ContainsKey(wire.EndPoint))
+                            {
+                                connects.AddRange(state.Connections[wire.EndPoint]);
+                            }
+                        }
+                    }
+                }
+            }
+            pairs.Sort();
+
+            List<string> gates = new List<string>();
+            gates.AddRange(state.Gates.Select(x => x.GetType().Name));
+            gates.Sort();
+            gates.AddRange(pairs);
+            return gates;
+        }
     }
 }
