@@ -7,10 +7,12 @@
              mc:Ignorable="d" 
              d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
-        <Image x:Name="ImageBox" HorizontalAlignment="Left" Height="540" VerticalAlignment="Top" Width="303.75" Margin="0,21,0,0"/>
+        <Image x:Name="ImageBox" HorizontalAlignment="Left" Height="568" VerticalAlignment="Top" Width="308" Margin="0,31,0,0"/>
         <Button Content="Back" HorizontalAlignment="Left" Height="30.75" Margin="24,795.75,0,0" VerticalAlignment="Top" Width="104"/>
         <Button x:Name="CameraBackButton" Content="Back" HorizontalAlignment="Left" Height="30.75" Margin="24,621,0,0" VerticalAlignment="Top" Width="104" Click="CameraBackButton_Click"/>
         <Button x:Name="SubmitButton" Content="Submit" Height="30.75" Margin="180,621,24,0" VerticalAlignment="Top" Width="104" Click="SubmitButton_Click"/>
+        <Rectangle HorizontalAlignment="Center" Height="476" Margin="0,71,0,0" Stroke="#FF01940F" VerticalAlignment="Top" Width="233" RadiusX="30" RadiusY="30" StrokeThickness="3"/>
+        <TextBlock HorizontalAlignment="Center" Height="24" Margin="0,560,0,0" Text="Place your sketch in the frame" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" FontFamily="Segoe UI" FontSize="14" FontWeight="Bold" TextAlignment="Center" Foreground="White"/>
 
     </Grid>
 </UserControl>
