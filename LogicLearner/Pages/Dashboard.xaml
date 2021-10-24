@@ -5,18 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:LogicLearner.Pages"
              mc:Ignorable="d" 
-             d:DesignHeight="856" d:DesignWidth="411" Background="#FF1E2E6C">
+             d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
-        <Ellipse Fill="#FFF4F4F5" Height="150" Margin="130.5,92.25,130.5,0" Stroke="Black" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="39" Margin="76.5,280.5,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="245.25" Background="Transparent" BorderBrush="Transparent" FontSize="24" Foreground="White" TextAlignment="Center"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="149.386" Margin="226.114,523.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="149.386"/>
-        <Button Content="Practice Problems" HorizontalAlignment="Left" Height="62.25" Margin="10,439,0,0" VerticalAlignment="Top" Width="391" Click="Button_Click"/>
-        <Button x:Name="ContinueButton" Content="Continue Next Lesson" HorizontalAlignment="Left" Height="62.25" Margin="10,355.5,0,0" VerticalAlignment="Top" Width="391" Click="ContinueButton_Click"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="149.386" Margin="33,523.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="149.386"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="56.25" Margin="10,789.75,0,0" Stroke="Black" VerticalAlignment="Top" Width="391" RadiusX="16" RadiusY="16"/>
-        <Button Content="Lessons" HorizontalAlignment="Left" Height="56.25" Margin="33,789.75,0,0" VerticalAlignment="Top" Width="94.667" Click="Button_Click_1"/>
-        <Button Content="Dashboard" HorizontalAlignment="Left" Height="56.25" Margin="162.667,789.75,0,0" VerticalAlignment="Top" Width="94.667"/>
-        <Button Content="Problems" HorizontalAlignment="Left" Height="56.25" Margin="280.833,789.75,0,0" VerticalAlignment="Top" Width="94.667" Click="Button_Click_3"/>
+        <Ellipse Fill="#FFF4F4F5" Height="112" Margin="100,92,97,0" Stroke="Black" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="29" Margin="59,232,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="182" Background="Transparent" BorderBrush="Transparent" FontSize="24" Foreground="White" TextAlignment="Center"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="110" Margin="171,412,0,0" Stroke="Black" VerticalAlignment="Top" Width="110"/>
+        <Button Content="Practice Problems" HorizontalAlignment="Left" Height="46" Margin="10,350,0,0" VerticalAlignment="Top" Width="291" Click="Button_Click"/>
+        <Button x:Name="ContinueButton" Content="Continue Next Lesson" HorizontalAlignment="Left" Height="46" Margin="10,287,0,0" VerticalAlignment="Top" Width="291" Click="ContinueButton_Click"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="110" Margin="27,412,0,0" Stroke="Black" VerticalAlignment="Top" Width="110"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="44" Margin="0,620,0,0" Stroke="Black" VerticalAlignment="Top" Width="302" RadiusX="16" RadiusY="16"/>
+        <Button Content="Lessons" HorizontalAlignment="Left" Height="44" Margin="22,620,0,0" VerticalAlignment="Top" Width="73" Click="Button_Click_1"/>
+        <Button Content="Dashboard" HorizontalAlignment="Left" Height="44" Margin="121,620,0,0" VerticalAlignment="Top" Width="73"/>
+        <Button Content="Problems" HorizontalAlignment="Left" Height="44" Margin="213,620,0,0" VerticalAlignment="Top" Width="73" Click="Button_Click_3"/>
 
     </Grid>
 </UserControl>

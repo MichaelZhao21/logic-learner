@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LogicLearner.Pages"
         mc:Ignorable="d"
-        Title="Logic Learner" Height="896" Width="424" Background="#FF1E2E6C">
+        Title="Logic Learner" Height="712" Width="318" Background="#FF1E2E6C">
     <Grid Background="#FF1E2E6C">
 
     </Grid>

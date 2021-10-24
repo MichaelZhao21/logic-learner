@@ -5,14 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:LogicLearner.Pages"
              mc:Ignorable="d" 
-             d:DesignHeight="856" d:DesignWidth="411" Background="#FF1E2E6C">
+             d:DesignHeight="672" d:DesignWidth="308" Background="#FF1E2E6C">
     <Grid>
         <Button x:Name="LessonBack" Content="Back" HorizontalAlignment="Left" Height="29.75" Margin="23.75,37.75,0,0" VerticalAlignment="Top" Width="99.25" Click="LessonBack_Click"/>
         <TextBlock HorizontalAlignment="Left" Height="34.25" Margin="37.5,119.75,0,0" TextWrapping="Wrap" Text="Number: Title" VerticalAlignment="Top" Width="265.25" FontSize="24" Foreground="White"/>
-        <Image HorizontalAlignment="Left" Height="180.583" Margin="23.75,177.25,0,0" VerticalAlignment="Top" Width="362.5"/>
-        <TextBlock HorizontalAlignment="Left" Height="307.667" Margin="10,370.667,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="391" Foreground="White"><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sagittis, pellentesque nisl phasellus turpis. "/><LineBreak/><Run/><LineBreak/><Run Text="lorem ipsum "/><LineBreak/><Run Text="dolor sit amet "/><LineBreak/><Run Text="consectetur "/><LineBreak/><Run/><LineBreak/><Run Text="Facilisis arcu tincidunt urna imperdiet. Vel, faucibus orci lectus pretium faucibus auctor. Lectus duis risus sed tincidunt sit condimentum condimentum. "/></TextBlock>
-        <Button x:Name="SketchButton" Content="Sketch it!" Height="53.333" Margin="207.917,694.667,24.75,0" VerticalAlignment="Top" Width="178.333" Click="SketchButton_Click"/>
-        <Button x:Name="NextLessonButton" Content="Next lesson" Height="53.333" Margin="207.917,765.334,24.75,0" VerticalAlignment="Top" Width="178.333" Click="NextLessonButton_Click"/>
+        <Image HorizontalAlignment="Left" Height="180.583" Margin="0,177,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBlock HorizontalAlignment="Center" Height="194" Margin="0,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" Foreground="White"><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sagittis, pellentesque nisl phasellus turpis. "/><LineBreak/><Run/><LineBreak/><Run Text="lorem ipsum "/><LineBreak/><Run Text="dolor sit amet "/><LineBreak/><Run Text="consectetur "/><LineBreak/><Run/><LineBreak/><Run Text="Facilisis arcu tincidunt urna imperdiet. Vel, faucibus orci lectus pretium faucibus auctor. Lectus duis risus sed tincidunt sit condimentum condimentum. "/></TextBlock>
+        <Button x:Name="SketchButton" Content="Sketch it!" Height="53.333" Margin="118,550,12,0" VerticalAlignment="Top" Width="178.333" Click="SketchButton_Click"/>
+        <Button x:Name="NextLessonButton" Content="Next lesson" Height="53.333" Margin="118,610,12,0" VerticalAlignment="Top" Width="178.333" Click="NextLessonButton_Click"/>
 
     </Grid>
 </UserControl>
